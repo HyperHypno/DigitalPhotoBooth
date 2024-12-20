@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: "C:\Users\Anish\Downloads\premium_photo-1675695700239-44153e6bf430.jpg";
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start;
+      width:167%;
+      align-items: center;
+      height:150%;
+      max-height: 150%;
+      gap: 50px;
+      margin: 0 auto;
+    }
+    .image {
+      width: 60%;
+      height: 90%;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .bimage {
+      width: 30%;
+      height: 20%;
+      position:absolute;
+      right:0;
+      bottom:0;
+    }
+    .textbox {
+      flex: 1;
+      line-height: 1.8;
+      position:absolute;
+      right:40%;
+      bottom:0;
+    }
+    .textbox h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left: Image -->
+    <img id="mainImage" class="image" src="C:\Users\Anish\Downloads\WhatsApp Image 2024-12-19 at 18.23.13_a6f80270.jpg" alt="Interactive Image">
+
+    <!-- Right: Textbox -->
+    <div class="textbox">
+      <h2>Anish(Founder of PenUp)</h2>
+    </div>
+  </div>
+
+    <!-- Link to Next Page -->
+    <a href="next-page.html"><img id="button1" class="bimage" src="C:\Users\Anish\Downloads\download3423-removebg-preview.png" alt="Next ->"  </a>
+</body>
+</html>
